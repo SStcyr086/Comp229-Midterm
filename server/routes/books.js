@@ -38,7 +38,7 @@ router.get('/add', (req, res, next) => {
       else
       {
           //show the edit view
-          res.render('books/details', {title: 'Add', books: bookToAdd})
+          res.render('books/details', {title: 'Add Book', books: bookToAdd})
       }
   });
  
@@ -80,10 +80,10 @@ router.get('/:id', (req, res, next) => {
     /*****************
      * ADD CODE HERE *
      *****************/
-    let id = req.params.id
+   // let id = req.params.id
     
 
-    book.findById(id,(err, bookToEdit) => {
+    book.find((err, bookToEdit) => {
         if(err)
         {
             console.log(err);
@@ -140,7 +140,7 @@ router.get('/delete/:id', (req, res, next) => {
      *****************/
     let id = req.params.id;
 
-    Book.remove({_id: id}, (err) => {
+    book.remove({_id: id}, (err) => {
         if(err)
         {
             console.log(err);
