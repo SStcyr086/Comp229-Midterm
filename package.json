@@ -45,17 +45,17 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/SStcyr086/Comp229-Midterm"
   },
   "keywords": [
     "NodeJS",
     "ExpressJS",
     "EJS"
   ],
-  "author": "Your Name Goes Here",
+  "author": "Shemar St Cyr",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/SStcyr086/Comp229-Midterm/issues"
   },
   "homepage": ""
 }
